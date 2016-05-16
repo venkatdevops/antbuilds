@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<project name="test" default="create"  basedir=".">
+
+   <target name="delete">
+      <delete dir="d1"/>
+        <delete dir="d2"/>
+   </target>
+
+<target name="create" depends="delete">
+<mkdir dir="d1"/>
+<mkdir dir="d2"/>
+</target>
+
+<target name="print1">
+<echo> WELCOME TO ALL </echo>
+</target>
+
+</project>
+
+
+
+
+
+
